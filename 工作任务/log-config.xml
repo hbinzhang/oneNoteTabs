@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE log4j:configuration SYSTEM "../../uep-schema/log4j.dtd">
+
+<log4j:configuration>
+
+	<appender name="psf" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/uep/psf.log"/>
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+
+	<appender name="wsf.fi.event" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/uep/wsf_fi_event.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+
+	<appender name="wsf.fi.controller" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/uep/wsf_fi_controller.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+
+	<appender name="wsf.mainframe" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/uep/wsf_mainframe.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+
+	<appender name="wsf.paf" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/uep/wsf_paf.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+
+	<appender name="wsf.util" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/uep/wsf_util.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+
+	<appender name="wsf.common" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/uep/wsf_common.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+		<appender name="model" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/uep/model.log"/>
+		<param name="Append" value="true"/>
+		<param name="MaxFileSize" value="10485760"/>
+		<param name="MaxBackupIndex" value="10"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+		</layout>
+	</appender>	
+	<appender name="wsf.fi.controller.asynch" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/uep/wsf_fi_controller_asynch.log"/>
+		<param name="Append" value="true"/>
+		<param name="MaxFileSize" value="10485760"/>
+		<param name="MaxBackupIndex" value="10"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+		</layout>
+	</appender>
+	<appender name="wsf.common.businessobject" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/uep/wsf_common_businessobject.log"/>
+		<param name="Append" value="true"/>
+		<param name="MaxFileSize" value="10485760"/>
+		<param name="MaxBackupIndex" value="10"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+		</layout>
+	</appender>	
+	<appender name="wsf.paf.csf.common" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/uep/wsf_paf_csf_common.log"/>
+		<param name="Append" value="true"/>
+		<param name="MaxFileSize" value="10485760"/>
+		<param name="MaxBackupIndex" value="10"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+		</layout>
+	</appender>		
+	<appender name="wsf.paf.csf.log" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/uep/wsf_paf_csf_log.log"/>
+		<param name="Append" value="true"/>
+		<param name="MaxFileSize" value="10485760"/>
+		<param name="MaxBackupIndex" value="10"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+		</layout>
+	</appender>	
+	<appender name="wsf.paf.csf.ne" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/uep/wsf_paf_csf_ne.log"/>
+		<param name="Append" value="true"/>
+		<param name="MaxFileSize" value="10485760"/>
+		<param name="MaxBackupIndex" value="10"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+		</layout>
+	</appender>	
+	<appender name="wsf.paf.csf.security" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/uep/wsf_paf_csf_security.log"/>
+		<param name="Append" value="true"/>
+		<param name="MaxFileSize" value="10485760"/>
+		<param name="MaxBackupIndex" value="10"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+		</layout>
+	</appender>		
+	<appender name="wsf.paf.csf.subnetwork" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/uep/wsf_paf_csf_subnetwork.log"/>
+		<param name="Append" value="true"/>
+		<param name="MaxFileSize" value="10485760"/>
+		<param name="MaxBackupIndex" value="10"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+		</layout>
+	</appender>	
+	<appender name="wsf.paf.csf.system" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/uep/wsf_paf_csf_system.log"/>
+		<param name="Append" value="true"/>
+		<param name="MaxFileSize" value="10485760"/>
+		<param name="MaxBackupIndex" value="10"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+		</layout>
+	</appender>	
+	<appender name="wsf.paf.maf.fault" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/uep/wsf_paf_maf_fault.log"/>
+		<param name="Append" value="true"/>
+		<param name="MaxFileSize" value="10485760"/>
+		<param name="MaxBackupIndex" value="10"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+		</layout>
+	</appender>		
+		<appender name="wsf.paf.maf.report" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/uep/wsf_paf_maf_report.log"/>
+		<param name="Append" value="true"/>
+		<param name="MaxFileSize" value="10485760"/>
+		<param name="MaxBackupIndex" value="10"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+		</layout>
+	</appender>	
+	<appender name="wsf.paf.maf.software" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/uep/wsf_paf_maf_software.log"/>
+		<param name="Append" value="true"/>
+		<param name="MaxFileSize" value="10485760"/>
+		<param name="MaxBackupIndex" value="10"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+		</layout>
+	</appender>		
+	<appender name="wsf.mainframe.commondata" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/uep/wsf_mainframe_commondata.log"/>
+		<param name="Append" value="true"/>
+		<param name="MaxFileSize" value="10485760"/>
+		<param name="MaxBackupIndex" value="10"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+		</layout>
+	</appender>	
+
+	<appender name="LteCommonLog" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./logs/LteCommonLog.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="10485760" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="LtePerfClientLog" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/ltePerfClient.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+
+	<appender name="LteReportClientLog" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/lteReportClient.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+	
+	<appender name="LteConfigClientLog" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/lteConfigClient.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+
+	<appender name="LteFaultClientLog" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/lteFaultClient.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+
+	<appender name="LteSoftwareClientLog" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/lteSoftwareClient.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+	<appender name="LteSonClientLog"
+
+		class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/lteSonClient.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern"
+
+				value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+	
+	<appender name="LteCommonClientLog"
+
+		class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/lteCommonClient.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern"
+
+				value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+	
+
+	<appender name="LteFaultLog" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/ltefault.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+
+	<appender name="LteConfigLog" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/lteConfig.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+
+	<appender name="LtePerfLog" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/ltePerf.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+
+	<appender name="LteReportLog" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/lteReport.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+	
+<appender name="LteSoftwareLog" class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/lteSoftware.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+	<appender name="LteSystemLog" class="org.apache.log4j.RollingFileAppender">		<param name="File" value="./logs/lteSystem.log" />		<param name="Append" value="true" />		<param name="MaxFileSize" value="10485760" />		<param name="MaxBackupIndex" value="10" />		<layout class="org.apache.log4j.PatternLayout">			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />		</layout>	</appender>
+	<appender name="LteSonLog"
+
+		class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/lteSon.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern"
+
+				value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+	
+	<appender name="LteCommonServerLog"
+
+		class="org.apache.log4j.RollingFileAppender">
+
+		<param name="File" value="./logs/lteCommonServer.log" />
+
+		<param name="Append" value="true" />
+
+		<param name="MaxFileSize" value="10485760" />
+
+		<param name="MaxBackupIndex" value="10" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern"
+
+				value="%d [%t] %-5p %c - %m%n" />
+
+		</layout>
+
+	</appender>
+	<logger name="com.potevio.uep.psf" additivity="true">
+
+		<level value="debug" />
+
+		<appender-ref ref="psf"/>
+
+	</logger>
+
+	<logger name="com.potevio.uep.wsf.fi.event" additivity="true">
+
+		<level value="debug" />
+
+		<appender-ref ref="wsf.fi.event" />
+
+	</logger>
+
+	<logger name="com.potevio.uep.wsf.fi.controller" additivity="true">
+
+		<level value="debug" />
+
+		<appender-ref ref="wsf.fi.controller" />
+
+	</logger>
+
+	<logger name="com.potevio.uep.wsf.mainframe" additivity="true">
+
+		<level value="debug" />
+
+		<appender-ref ref="wsf.mainframe" />
+
+	</logger>
+
+	<logger name="com.potevio.uep.wsf.paf" additivity="true">
+
+		<level value="debug" />
+
+		<appender-ref ref="wsf.paf" />
+
+	</logger>
+
+	<logger name="com.potevio.uep.wsf.util" additivity="true">
+
+		<level value="debug" />
+
+		<appender-ref ref="wsf.util" />
+
+	</logger>
+
+	<logger name="com.potevio.uep.wsf.common" additivity="true">
+
+		<level value="debug" />
+
+		<appender-ref ref="wsf.common" />
+
+	</logger>
+	<logger name="com.potevio.uep.model" additivity="true">
+		<level value="debug"/>
+		<appender-ref ref="model"/>
+	</logger>	
+	<logger name="com.potevio.uep.wsf.fi.controller.asynch" additivity="true">
+		<level value="debug"/>
+		<appender-ref ref="wsf.fi.controller.asynch"/>
+	</logger>	
+	<logger name="com.potevio.uep.wsf.common.businessobject" additivity="true">
+		<level value="debug"/>
+		<appender-ref ref="wsf.common.businessobject"/>
+	</logger>
+	<logger name="com.potevio.uep.wsf.paf.csf.common" additivity="true">
+		<level value="debug"/>
+		<appender-ref ref="wsf.paf.csf.common"/>
+	</logger>
+	<logger name="com.potevio.uep.wsf.paf.csf.log" additivity="true">
+		<level value="debug"/>
+		<appender-ref ref="wsf.paf.csf.log"/>
+	</logger>	
+	<logger name="com.potevio.uep.wsf.paf.csf.ne" additivity="true">
+		<level value="debug"/>
+		<appender-ref ref="wsf.paf.csf.ne"/>
+	</logger>	
+	<logger name="com.potevio.uep.wsf.paf.csf.security" additivity="true">
+		<level value="debug"/>
+		<appender-ref ref="wsf.paf.csf.security"/>
+	</logger>	
+	<logger name="com.potevio.uep.wsf.paf.csf.subnetwork" additivity="true">
+		<level value="debug"/>
+		<appender-ref ref="wsf.paf.csf.subnetwork"/>
+	</logger>		
+	<logger name="com.potevio.uep.wsf.paf.csf.system" additivity="true">
+		<level value="debug"/>
+		<appender-ref ref="wsf.paf.csf.system"/>
+	</logger>		
+	<logger name="com.potevio.uep.wsf.paf.maf.fault" additivity="true">
+		<level value="debug"/>
+		<appender-ref ref="wsf.paf.maf.fault"/>
+	</logger>	
+		<logger name="com.potevio.uep.wsf.paf.maf.reort" additivity="true">
+		<level value="debug"/>
+		<appender-ref ref="wsf.paf.maf.report"/>
+	</logger>	
+	<logger name="com.potevio.uep.wsf.paf.maf.software" additivity="true">
+		<level value="debug"/>
+		<appender-ref ref="wsf.paf.maf.software"/>
+	</logger>	
+	<logger name="com.potevio.uep.wsf.mainframe.commondata" additivity="true">
+		<level value="debug"/>
+		<appender-ref ref="wsf.mainframe.commondata"/>
+	</logger>	
+
+	<logger name="com.cpit.eomcr.server.fault" additivity="false">
+
+		<level value="debug" />
+
+		<appender-ref ref="LteFaultLog" />
+
+	</logger>
+
+	<logger name="com.cpit.eomcr.server.configure" additivity="false">
+
+		<level value="debug" />
+
+		<appender-ref ref="LteConfigLog" />
+
+	</logger>
+
+	<logger name="com.cpit.eomcr.server.perf" additivity="false">
+
+		<level value="debug" />
+
+		<appender-ref ref="LtePerfLog" />
+
+	</logger>
+
+	<logger name="com.cpit.eomcr.server.report" additivity="false">
+		<level value="debug" />
+		<appender-ref ref="LteReportLog" />
+	</logger>
+	
+	<logger name="com.cpit.eomcr.server.software" additivity="false">
+
+		<level value="debug" />
+
+		<appender-ref ref="LteSoftwareLog" />
+
+	</logger>
+		<logger name="com.cpit.eomcr.server.system" additivity="false">		<level value="debug" />		<appender-ref ref="LteSystemLog" />	</logger>
+	<logger name="com.cpit.eomcr.server.son"  additivity="false">
+
+		<level value="debug" />
+
+		<appender-ref ref="LteSonLog" />
+
+	</logger>
+	
+	<logger name="com.cpit.eomcr.server.common"  additivity="false">
+
+		<level value="debug" />
+
+		<appender-ref ref="LteCommonServerLog" />
+
+	</logger>
+
+	<logger name="com.cpit.eomcr.ui.fault" additivity="false">
+
+		<level value="debug" />
+
+		<appender-ref ref="LteFaultClientLog" />
+
+	</logger>
+
+	<logger name="com.cpit.eomcr.ui.software" additivity="false">
+
+		<level value="debug" />
+
+		<appender-ref ref="LteSoftwareClientLog" />
+
+	</logger>
+	
+	<logger name="com.cpit.eomcr.ui.configure" additivity="false">
+
+		<level value="debug" />
+
+		<appender-ref ref="LteConfigClientLog" />
+
+	</logger>
+	<logger name="com.cpit.eomcr.common" additivity="false">
+		<level value="debug" />
+		<appender-ref ref="LteCommonLog" />
+	</logger>
+
+	<logger name="com.cpit.eomcr.ui.perf" additivity="false">
+
+		<level value="debug" />
+
+		<appender-ref ref="LtePerfClientLog" />
+
+	</logger>
+
+	<logger name="com.cpit.eomcr.ui.report" additivity="false">
+
+		<level value="debug" />
+
+		<appender-ref ref="LteReportClientLog" />
+
+	</logger>
+		
+	<logger name="com.cpit.eomcr.ui.son"  additivity="false">
+
+		<level value="debug" />
+
+		<appender-ref ref="LteSonClientLog" />
+
+	</logger>
+	
+	<logger name="com.cpit.eomcr.ui.common"  additivity="false">
+
+		<level value="debug" />
+
+		<appender-ref ref="LteCommonClientLog" />
+
+	</logger>
+
+</log4j:configuration>
+
